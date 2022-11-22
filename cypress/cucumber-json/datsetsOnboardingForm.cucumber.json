@@ -1,0 +1,248 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Datsets Onboarding Form",
+    "line": 2,
+    "id": "datsets-onboarding-form",
+    "tags": [
+      {
+        "name": "@all",
+        "line": 1
+      }
+    ],
+    "uri": "datsetsOnboardingForm.feature",
+    "elements": [
+      {
+        "id": "datsets-onboarding-form;verifying-datasets-onboarding-form-is-submitted-successfully",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verifying Datasets Onboarding form is submitted successfully",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@focus",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I on the HDR Dataset home page and logged in to the application as \"custodian\"",
+            "result": {
+              "status": "passed",
+              "duration": 1946000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to datasets dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 4716000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I am clicking \"Add a new dataset\"",
+            "result": {
+              "status": "passed",
+              "duration": 693000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I fill details in summary",
+            "result": {
+              "status": "passed",
+              "duration": 14473000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I fill details in documentation",
+            "result": {
+              "status": "passed",
+              "duration": 14206000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I fill details in coverage",
+            "result": {
+              "status": "passed",
+              "duration": 9185000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I fill details in provenance",
+            "result": {
+              "status": "passed",
+              "duration": 15260000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I fill details in accessibility",
+            "result": {
+              "status": "passed",
+              "duration": 27586000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I fill details in enrichment and Linkage",
+            "result": {
+              "status": "passed",
+              "duration": 8062000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I fill details in observations",
+            "result": {
+              "status": "passed",
+              "duration": 6472000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I fill details in structural Metadata",
+            "result": {
+              "status": "passed",
+              "duration": 2138000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I submit application for \"dataset\"",
+            "result": {
+              "status": "passed",
+              "duration": 697000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see message \"You have successfully submitted your dataset for review. You will be notified when a decision has been made.\"",
+            "result": {
+              "status": "passed",
+              "duration": 2198000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "datsets-onboarding-form;verifying-datasets-onboarding-form-for-all-the-mandatory-fields",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Verifying Datasets Onboarding form for all the mandatory fields",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@2",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I on the HDR Dataset home page and logged in to the application as \"custodian\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I navigate to datasets dashboard",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I am clicking \"Add a new dataset\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I verify error messages on summary",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I verify error messages on provenance",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I verify error messages on accessibility",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I verify error message on Observations",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,166 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "HDR UK Papers & Preprints",
+    "line": 2,
+    "id": "hdr-uk-papers-&-preprints",
+    "tags": [
+      {
+        "name": "@all",
+        "line": 1
+      }
+    ],
+    "uri": "dataAccessRequestForm.feature",
+    "elements": [
+      {
+        "id": "hdr-uk-papers-&-preprints;verifying-data-access-request-form-is-submitted-successfully",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verifying Data Access Request form is submitted successfully",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I on the HDR Dataset home page and logged in to the application as \"applicant\"",
+            "result": {
+              "status": "passed",
+              "duration": 1566000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I search for \"HDR UK Papers & Preprints\"",
+            "result": {
+              "status": "passed",
+              "duration": 5636000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I am clicking \"HDR UK Papers & Preprints\"",
+            "result": {
+              "status": "passed",
+              "duration": 677000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I am clicking \"How to request access\"",
+            "result": {
+              "status": "passed",
+              "duration": 1106000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I am clicking \"Start application\"",
+            "result": {
+              "status": "passed",
+              "duration": 8326000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I fill details in before you begin",
+            "result": {
+              "status": "passed",
+              "duration": 15626000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I fill details in safe people",
+            "result": {
+              "status": "passed",
+              "duration": 5585000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I fill details in safe project",
+            "result": {
+              "status": "passed",
+              "duration": 44488000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I fill details in safe data",
+            "result": {
+              "status": "passed",
+              "duration": 4951000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I fill details in safe settings",
+            "result": {
+              "status": "passed",
+              "duration": 8669000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I fill details in safe outputs",
+            "result": {
+              "status": "passed",
+              "duration": 12730000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I submit application for \"dar\"",
+            "result": {
+              "status": "failed",
+              "duration": 4336000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.confirmSubmissionModal-footer--wrap > .css-1og6tvc`, but never found it.\n    at ensureExistence (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:162649:25)\n    at $Cy.ensureElExistence (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:162667:12)\n    at ensureExistence (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:151782:23)\n    at onFailFn (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:151820:9)\nFrom previous event:\n    at $Cy.verifyUpcomingAssertions (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:151862:63)\n    at https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:159645:21\nFrom previous event:\n    at resolveElements (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:159640:41)\n    at tryFn (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:167065:21)\n    at whenStable (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:167103:12)\n    at https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:166598:16"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see message \"Your application was submitted successfully\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

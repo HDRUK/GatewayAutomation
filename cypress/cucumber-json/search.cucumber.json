@@ -1,0 +1,165 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Search Functionality",
+    "line": 2,
+    "id": "search-functionality",
+    "tags": [
+      {
+        "name": "@all",
+        "line": 1
+      }
+    ],
+    "uri": "search.feature",
+    "elements": [
+      {
+        "id": "search-functionality;verify-search-results-with-search-strings-on:-dataset-name,-custodian-name-i.e.-sail/nhsx,-abstract-keywords-as-a-custodian",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify search results with search strings on: dataset name, custodian name i.e. SAIL/NHSX, Abstract Keywords as a Custodian",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I on the HDR Dataset home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I logged in to the applicatin via \"Google\" as \"Custodian\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I search for \"Mental Health Services\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see all the results with name contains \"Mental Health Services\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-functionality;verify-search-results-with-search-strings-on:-dataset-name,-custodian-name-i.e.-sail/nhsx,-abstract-keywords-as-a-admin",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Verify search results with search strings on: dataset name, custodian name i.e. SAIL/NHSX, Abstract Keywords as a Admin",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@2",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I on the HDR Dataset home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I logged in to the applicatin via \"Google\" as \"Admin\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I search for \"Mental Health Services\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see all the results with name contains \"Mental Health Services\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-functionality;verify-seacrh-count",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Verify seacrh count",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@focus",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I on the HDR Dataset home page",
+            "result": {
+              "status": "passed",
+              "duration": 639000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see login as \"applicant\"",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

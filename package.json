@@ -1,0 +1,48 @@
+{
+  "name": "HDR UK",
+  "version": "1.0.0",
+  "description": "HDR UK",
+  "main": "index.js",
+  "scripts": {
+    "chrome": "npx cypress run -e TAGS=\"@1\" --browser chrome",
+    "firefox": "npx cypress run -e TAGS=\"@2\" --browser firefox",
+    "safari": "npx cypress run -e TAGS=\"@2\" --browser safari",
+    "test:all": "cypress run --spec \"**/*.features\"",
+    "reports_chrome": "npm run chrome && node cucumber-html-report.js",
+    "reports_firefox": "npm run firefox && node cucumber-html-report.js",
+    "reports_safari": "npm run sarafi && node cucumber-html-report.js",
+    "open": "./node_modules/.bin/cypress open"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "testing"
+  ],
+  "dependencies": {
+    "cypress": "^6.8.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^2.0.0",
+    "select-files": "^1.0.1",
+    "xpath": "^0.0.32"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-highlight": "^1.2.0",
+    "cypress-plugin-tab": "^1.0.5",
+    "faker": "^4.1.0",
+    "mocha": "^6.0.0",
+    "multiple-cucumber-html-reporter": "^2.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "nonGlobalStepBaseDir": "cypress/integration/features",
+    "stepDefinitions": "cypress/integration/features/test",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

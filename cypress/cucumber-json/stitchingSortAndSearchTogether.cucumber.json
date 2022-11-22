@@ -1,0 +1,641 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Stitching sort and search together functionality",
+    "line": 2,
+    "id": "stitching-sort-and-search-together-functionality",
+    "tags": [
+      {
+        "name": "@all",
+        "line": 1
+      }
+    ],
+    "uri": "stitchingSortAndSearchTogether.feature",
+    "elements": [
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-custodian",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify stitching sort and search together options for Recent activity as a Custodian",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am stitching serach \"covid\" and sorting out \"Recent activity\" as \"Custodian\"",
+            "result": {
+              "status": "passed",
+              "duration": 6119000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-custodian",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify stitching sort and search together options for Recent activity as a Custodian",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am stitching serach \"Diabetes\" and sorting out \"Recent activity\" as \"Custodian\"",
+            "result": {
+              "status": "passed",
+              "duration": 5129000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-custodian",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Verify stitching sort and search together options for Recent activity as a Custodian",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am stitching serach \"Covid\" and sorting out \"Alphabetically\" as \"Custodian\"",
+            "result": {
+              "status": "passed",
+              "duration": 5202000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-custodian",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Verify stitching sort and search together options for Recent activity as a Custodian",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am stitching serach \"Diabetes\" and sorting out \"Alphabetically\" as \"Custodian\"",
+            "result": {
+              "status": "passed",
+              "duration": 5205000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-custodian",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Verify stitching sort and search together options for Recent activity as a Custodian",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am stitching serach \"Covid\" and sorting out \"Metadata quality\" as \"Custodian\"",
+            "result": {
+              "status": "passed",
+              "duration": 5118000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-custodian",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify stitching sort and search together options for Recent activity as a Custodian",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am stitching serach \"Diabetes\" and sorting out \"Metadata quality\" as \"Custodian\"",
+            "result": {
+              "status": "passed",
+              "duration": 5225000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-custodian",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Verify stitching sort and search together options for Recent activity as a Custodian",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am stitching serach \"Covid\" and sorting out \"Recently published\" as \"Custodian\"",
+            "result": {
+              "status": "passed",
+              "duration": 5123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-custodian",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Verify stitching sort and search together options for Recent activity as a Custodian",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am stitching serach \"Diabetes\" and sorting out \"Recently published\" as \"Custodian\"",
+            "result": {
+              "status": "passed",
+              "duration": 5056000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-admin",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Verify stitching sort and search together options for Recent activity as a Admin",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@2",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I am stitching serach \"Covid\" and sorting out \"Recent activity\" as \"Admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 5054000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-admin",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Verify stitching sort and search together options for Recent activity as a Admin",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@2",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I am stitching serach \"Diabetes\" and sorting out \"Recent activity\" as \"Admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 5053000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-admin",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Verify stitching sort and search together options for Recent activity as a Admin",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@2",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I am stitching serach \"Covid\" and sorting out \"Alphabetically\" as \"Admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 5113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-admin",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Verify stitching sort and search together options for Recent activity as a Admin",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@2",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I am stitching serach \"Diabetes\" and sorting out \"Alphabetically\" as \"Admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 5034000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-admin",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Verify stitching sort and search together options for Recent activity as a Admin",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@2",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I am stitching serach \"Covid\" and sorting out \"Metadata quality\" as \"Admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 5743000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-admin",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Verify stitching sort and search together options for Recent activity as a Admin",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@2",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I am stitching serach \"Diabetes\" and sorting out \"Metadata quality\" as \"Admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 5023000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-admin",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Verify stitching sort and search together options for Recent activity as a Admin",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@2",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I am stitching serach \"Covid\" and sorting out \"Recently published\" as \"Admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 5261000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stitching-sort-and-search-together-functionality;verify-stitching-sort-and-search-together-options-for-recent-activity-as-a-admin",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Verify stitching sort and search together options for Recent activity as a Admin",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@2",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I am stitching serach \"Diabetes\" and sorting out \"Recently published\" as \"Admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 5047000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see response 200",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

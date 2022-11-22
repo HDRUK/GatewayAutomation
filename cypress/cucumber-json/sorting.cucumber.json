@@ -1,0 +1,322 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Sorting functionality",
+    "line": 2,
+    "id": "sorting-functionality",
+    "tags": [
+      {
+        "name": "@all",
+        "line": 1
+      }
+    ],
+    "uri": "sorting.feature",
+    "elements": [
+      {
+        "id": "sorting-functionality;verify-sorting-options-for-recent-activity-as-a-custodian",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify sorting options for Recent activity as a Custodian",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am sorting out \"Recent activity\" as \"Custodian\"",
+            "result": {
+              "status": "failed",
+              "duration": 240000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=latest&sortDirection=desc&status=active,draft\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=latest&sortDirection=desc&status=active,draft\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5ZjVmNzY3ZGI1ZDM0MDhiNDAwNyIsImlkIjo0NTczOTIwOTk4NzY0NTIzLCJ0aW1lU3RhbXAiOjE2NjkxMTUwMjgzNDB9LCJpYXQiOjE2NjkxMTUwMjgsImV4cCI6MTY2OTExNTkyOH0.PWQfr7MIfesRkO12JmeZgbrupmaRk58fDRMec9rfHZc\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"cookie\": \"_hjAbsoluteSessionInProgress=0; _hjSession_2685642=eyJpZCI6IjIxMDE4ZTViLTE3MzEtNDgyZC05YWE5LWRjYzdlNmUzMmRkMiIsImNyZWF0ZWQiOjE2NjkxMTMxNDU5MDMsImluU2FtcGxlIjpmYWxzZX0=; _hjFirstSeen=1; _hjSessionUser_2685642=eyJpZCI6ImE4NWRmNGU0LWE4MTEtNTcxMy05OWViLWY0YjQ0MjVmNThhOCIsImNyZWF0ZWQiOjE2NjkxMTMxNDU3ODUsImV4aXN0aW5nIjp0cnVlfQ==; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5ZDAwNzY3ZGI1ZDM0MDhiNDAwNCIsImlkIjoxMTIyMzM5ODQ1NjM4MiwidGltZVN0YW1wIjoxNjY5MTEzMTQ0NDYzfSwiaWF0IjoxNjY5MTEzMTQ0LCJleHAiOjE2NjkxMTQwNDR9._4lLaX9-9YSuAb5FgMQFA3c8hmQI8yDxG9xHKOF3eak; sessionId=s%3Ak1DlIm-517vZxxd_t9p921cvSbVYnYMf.x5AMpkrfYParmtlWB0hxp0boHx7vlFdSc2M6ckErMUU\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"vary\": \"Origin\",\n  \"access-control-allow-credentials\": \"true\",\n  \"x-ratelimit-limit\": \"500\",\n  \"x-ratelimit-remaining\": \"498\",\n  \"x-ratelimit-reset\": \"1669115078\",\n  \"x-cloud-trace-context\": \"5f360ba5f97cc83b57353c6e0c86fd4f\",\n  \"date\": \"Tue, 22 Nov 2022 11:03:48 GMT\",\n  \"content-type\": \"text/html\",\n  \"server\": \"Google Frontend\",\n  \"content-length\": \"12\"\n}\nBody: Unauthorized\n\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:160310:21\nFrom previous event:\n    at Context.request (http://localhost:52459/__cypress/runner/cypress_runner.js:160306:84)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:170970:15\nFrom previous event:\n    at runCommand (http://localhost:52459/__cypress/runner/cypress_runner.js:170949:8)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:171123:16\nFrom previous event:\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:34)\nFrom previous event:\n    at Promise.catch.err.name (http://localhost:52459/__cypress/runner/cypress_runner.js:171136:37)\nFrom previous event:\n    at run (http://localhost:52459/__cypress/runner/cypress_runner.js:171129:21)\n    at cy.<computed> [as then] (http://localhost:52459/__cypress/runner/cypress_runner.js:171586:11)\n    at runnable.fn (http://localhost:52459/__cypress/runner/cypress_runner.js:171813:21)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105099:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (http://localhost:52459/__cypress/runner/cypress_runner.js:105758:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105884:12\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105667:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105677:7\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105579:14)\n    at Hook.<anonymous> (http://localhost:52459/__cypress/runner/cypress_runner.js:105640:7)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:177523:22)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177550:11\nFrom previous event:\n    at onNext (http://localhost:52459/__cypress/runner/cypress_runner.js:177547:57)\n    at done (http://localhost:52459/__cypress/runner/cypress_runner.js:105039:5)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105122:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105601:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105645:5\n    at timeslice (http://localhost:52459/__cypress/runner/cypress_runner.js:99571:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see response 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sorting-functionality;verify-sorting-options-for-alphabetically-as-a-custodian",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify sorting options for Alphabetically as a Custodian",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@2",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I am sorting out \"Alphabetically\" as \"Custodian\"",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=alphabetic&sortDirection=desc&status=active,draft\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=alphabetic&sortDirection=desc&status=active,draft\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5ZjVmNzY3ZGI1ZDM0MDhiNDAwNyIsImlkIjo0NTczOTIwOTk4NzY0NTIzLCJ0aW1lU3RhbXAiOjE2NjkxMTUwMjg1ODl9LCJpYXQiOjE2NjkxMTUwMjgsImV4cCI6MTY2OTExNTkyOH0.uZSpeziHXBSiIh4uu1pz5xsTgEPrLqjI0TGqqtvFe1c\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"cookie\": \"_hjAbsoluteSessionInProgress=0; _hjSession_2685642=eyJpZCI6IjIxMDE4ZTViLTE3MzEtNDgyZC05YWE5LWRjYzdlNmUzMmRkMiIsImNyZWF0ZWQiOjE2NjkxMTMxNDU5MDMsImluU2FtcGxlIjpmYWxzZX0=; _hjFirstSeen=1; _hjSessionUser_2685642=eyJpZCI6ImE4NWRmNGU0LWE4MTEtNTcxMy05OWViLWY0YjQ0MjVmNThhOCIsImNyZWF0ZWQiOjE2NjkxMTMxNDU3ODUsImV4aXN0aW5nIjp0cnVlfQ==; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5ZDAwNzY3ZGI1ZDM0MDhiNDAwNCIsImlkIjoxMTIyMzM5ODQ1NjM4MiwidGltZVN0YW1wIjoxNjY5MTEzMTQ0NDYzfSwiaWF0IjoxNjY5MTEzMTQ0LCJleHAiOjE2NjkxMTQwNDR9._4lLaX9-9YSuAb5FgMQFA3c8hmQI8yDxG9xHKOF3eak; sessionId=s%3Ak1DlIm-517vZxxd_t9p921cvSbVYnYMf.x5AMpkrfYParmtlWB0hxp0boHx7vlFdSc2M6ckErMUU\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"vary\": \"Origin\",\n  \"access-control-allow-credentials\": \"true\",\n  \"x-ratelimit-limit\": \"500\",\n  \"x-ratelimit-remaining\": \"496\",\n  \"x-ratelimit-reset\": \"1669115078\",\n  \"x-cloud-trace-context\": \"472781aa89f4832f47542b0784579e7f\",\n  \"date\": \"Tue, 22 Nov 2022 11:03:48 GMT\",\n  \"content-type\": \"text/html\",\n  \"server\": \"Google Frontend\",\n  \"content-length\": \"12\"\n}\nBody: Unauthorized\n\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:160310:21\nFrom previous event:\n    at Context.request (http://localhost:52459/__cypress/runner/cypress_runner.js:160306:84)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:170970:15\nFrom previous event:\n    at runCommand (http://localhost:52459/__cypress/runner/cypress_runner.js:170949:8)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:171123:16\nFrom previous event:\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:34)\nFrom previous event:\n    at Promise.catch.err.name (http://localhost:52459/__cypress/runner/cypress_runner.js:171136:37)\nFrom previous event:\n    at run (http://localhost:52459/__cypress/runner/cypress_runner.js:171129:21)\n    at cy.<computed> [as then] (http://localhost:52459/__cypress/runner/cypress_runner.js:171586:11)\n    at runnable.fn (http://localhost:52459/__cypress/runner/cypress_runner.js:171813:21)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105099:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (http://localhost:52459/__cypress/runner/cypress_runner.js:105758:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105884:12\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105667:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105677:7\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105579:14)\n    at Hook.<anonymous> (http://localhost:52459/__cypress/runner/cypress_runner.js:105640:7)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:177523:22)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177550:11\nFrom previous event:\n    at onNext (http://localhost:52459/__cypress/runner/cypress_runner.js:177547:57)\n    at done (http://localhost:52459/__cypress/runner/cypress_runner.js:105039:5)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105122:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105601:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105645:5\n    at timeslice (http://localhost:52459/__cypress/runner/cypress_runner.js:99571:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see response 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sorting-functionality;verify-sorting-options-for-metadata-quality-as-a-custodian",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify sorting options for Metadata quality as a Custodian",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@3",
+            "line": 14
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I am sorting out \"Metadata quality\" as \"Custodian\"",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=metadata&sortDirection=desc&status=active,draft\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=metadata&sortDirection=desc&status=active,draft\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5ZjVmNzY3ZGI1ZDM0MDhiNDAwNyIsImlkIjo0NTczOTIwOTk4NzY0NTIzLCJ0aW1lU3RhbXAiOjE2NjkxMTUwMjg4MTZ9LCJpYXQiOjE2NjkxMTUwMjgsImV4cCI6MTY2OTExNTkyOH0.kd3hH8bgChGYw2aXb_FbdiYDHdiUVpFao1EdzpUifIU\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"cookie\": \"_hjAbsoluteSessionInProgress=0; _hjSession_2685642=eyJpZCI6IjIxMDE4ZTViLTE3MzEtNDgyZC05YWE5LWRjYzdlNmUzMmRkMiIsImNyZWF0ZWQiOjE2NjkxMTMxNDU5MDMsImluU2FtcGxlIjpmYWxzZX0=; _hjFirstSeen=1; _hjSessionUser_2685642=eyJpZCI6ImE4NWRmNGU0LWE4MTEtNTcxMy05OWViLWY0YjQ0MjVmNThhOCIsImNyZWF0ZWQiOjE2NjkxMTMxNDU3ODUsImV4aXN0aW5nIjp0cnVlfQ==; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5ZDAwNzY3ZGI1ZDM0MDhiNDAwNCIsImlkIjoxMTIyMzM5ODQ1NjM4MiwidGltZVN0YW1wIjoxNjY5MTEzMTQ0NDYzfSwiaWF0IjoxNjY5MTEzMTQ0LCJleHAiOjE2NjkxMTQwNDR9._4lLaX9-9YSuAb5FgMQFA3c8hmQI8yDxG9xHKOF3eak; sessionId=s%3Ak1DlIm-517vZxxd_t9p921cvSbVYnYMf.x5AMpkrfYParmtlWB0hxp0boHx7vlFdSc2M6ckErMUU\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"vary\": \"Origin\",\n  \"access-control-allow-credentials\": \"true\",\n  \"x-ratelimit-limit\": \"500\",\n  \"x-ratelimit-remaining\": \"494\",\n  \"x-ratelimit-reset\": \"1669115078\",\n  \"x-cloud-trace-context\": \"8dd308cd55a59ab5d4cdc5c21ff4dbc5\",\n  \"date\": \"Tue, 22 Nov 2022 11:03:48 GMT\",\n  \"content-type\": \"text/html\",\n  \"server\": \"Google Frontend\",\n  \"content-length\": \"12\"\n}\nBody: Unauthorized\n\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:160310:21\nFrom previous event:\n    at Context.request (http://localhost:52459/__cypress/runner/cypress_runner.js:160306:84)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:170970:15\nFrom previous event:\n    at runCommand (http://localhost:52459/__cypress/runner/cypress_runner.js:170949:8)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:171123:16\nFrom previous event:\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:34)\nFrom previous event:\n    at Promise.catch.err.name (http://localhost:52459/__cypress/runner/cypress_runner.js:171136:37)\nFrom previous event:\n    at run (http://localhost:52459/__cypress/runner/cypress_runner.js:171129:21)\n    at cy.<computed> [as then] (http://localhost:52459/__cypress/runner/cypress_runner.js:171586:11)\n    at runnable.fn (http://localhost:52459/__cypress/runner/cypress_runner.js:171813:21)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105099:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (http://localhost:52459/__cypress/runner/cypress_runner.js:105758:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105884:12\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105667:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105677:7\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105579:14)\n    at Hook.<anonymous> (http://localhost:52459/__cypress/runner/cypress_runner.js:105640:7)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:177523:22)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177550:11\nFrom previous event:\n    at onNext (http://localhost:52459/__cypress/runner/cypress_runner.js:177547:57)\n    at done (http://localhost:52459/__cypress/runner/cypress_runner.js:105039:5)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105122:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105601:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105645:5\n    at timeslice (http://localhost:52459/__cypress/runner/cypress_runner.js:99571:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see response 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sorting-functionality;verify-sorting-options-for-recently-published-as-a-custodian",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Verify sorting options for Recently published as a Custodian",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@4",
+            "line": 19
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I am sorting out \"Recently published\" as \"Custodian\"",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=recentlyadded&sortDirection=desc&status=active,draft\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=recentlyadded&sortDirection=desc&status=active,draft\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5ZjVmNzY3ZGI1ZDM0MDhiNDAwNyIsImlkIjo0NTczOTIwOTk4NzY0NTIzLCJ0aW1lU3RhbXAiOjE2NjkxMTUwMjkwMTZ9LCJpYXQiOjE2NjkxMTUwMjksImV4cCI6MTY2OTExNTkyOX0.jvRwLUWo-4Y95F-_UsKIdaOY56-0i9a1_CvvB_aNVkI\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"cookie\": \"_hjAbsoluteSessionInProgress=0; _hjSession_2685642=eyJpZCI6IjIxMDE4ZTViLTE3MzEtNDgyZC05YWE5LWRjYzdlNmUzMmRkMiIsImNyZWF0ZWQiOjE2NjkxMTMxNDU5MDMsImluU2FtcGxlIjpmYWxzZX0=; _hjFirstSeen=1; _hjSessionUser_2685642=eyJpZCI6ImE4NWRmNGU0LWE4MTEtNTcxMy05OWViLWY0YjQ0MjVmNThhOCIsImNyZWF0ZWQiOjE2NjkxMTMxNDU3ODUsImV4aXN0aW5nIjp0cnVlfQ==; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5ZDAwNzY3ZGI1ZDM0MDhiNDAwNCIsImlkIjoxMTIyMzM5ODQ1NjM4MiwidGltZVN0YW1wIjoxNjY5MTEzMTQ0NDYzfSwiaWF0IjoxNjY5MTEzMTQ0LCJleHAiOjE2NjkxMTQwNDR9._4lLaX9-9YSuAb5FgMQFA3c8hmQI8yDxG9xHKOF3eak; sessionId=s%3Ak1DlIm-517vZxxd_t9p921cvSbVYnYMf.x5AMpkrfYParmtlWB0hxp0boHx7vlFdSc2M6ckErMUU\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"vary\": \"Origin\",\n  \"access-control-allow-credentials\": \"true\",\n  \"x-ratelimit-limit\": \"500\",\n  \"x-ratelimit-remaining\": \"492\",\n  \"x-ratelimit-reset\": \"1669115078\",\n  \"x-cloud-trace-context\": \"211c7b68a4f826092b7d11298cf87119\",\n  \"date\": \"Tue, 22 Nov 2022 11:03:49 GMT\",\n  \"content-type\": \"text/html\",\n  \"server\": \"Google Frontend\",\n  \"content-length\": \"12\"\n}\nBody: Unauthorized\n\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:160310:21\nFrom previous event:\n    at Context.request (http://localhost:52459/__cypress/runner/cypress_runner.js:160306:84)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:170970:15\nFrom previous event:\n    at runCommand (http://localhost:52459/__cypress/runner/cypress_runner.js:170949:8)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:171123:16\nFrom previous event:\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:34)\nFrom previous event:\n    at Promise.catch.err.name (http://localhost:52459/__cypress/runner/cypress_runner.js:171136:37)\nFrom previous event:\n    at run (http://localhost:52459/__cypress/runner/cypress_runner.js:171129:21)\n    at cy.<computed> [as then] (http://localhost:52459/__cypress/runner/cypress_runner.js:171586:11)\n    at runnable.fn (http://localhost:52459/__cypress/runner/cypress_runner.js:171813:21)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105099:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (http://localhost:52459/__cypress/runner/cypress_runner.js:105758:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105884:12\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105667:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105677:7\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105579:14)\n    at Hook.<anonymous> (http://localhost:52459/__cypress/runner/cypress_runner.js:105640:7)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:177523:22)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177550:11\nFrom previous event:\n    at onNext (http://localhost:52459/__cypress/runner/cypress_runner.js:177547:57)\n    at done (http://localhost:52459/__cypress/runner/cypress_runner.js:105039:5)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105122:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105601:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105645:5\n    at timeslice (http://localhost:52459/__cypress/runner/cypress_runner.js:99571:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should see response 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sorting-functionality;verify-sorting-options-for-recent-activity-as-a-admin",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Verify sorting options for Recent activity as a Admin",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@5",
+            "line": 24
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "I am sorting out \"Recent activity\" as \"Admin\"",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=latest&sortDirection=desc&status=active,draft\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=latest&sortDirection=desc&status=active,draft\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5YTY3NzY3ZGI1ZDM0MDhiNDAwMSIsImlkIjoxMjM0OTg3NjM0NTYyMzIzLCJ0aW1lU3RhbXAiOjE2NjkxMTUwMjkyMzZ9LCJpYXQiOjE2NjkxMTUwMjksImV4cCI6MTY2OTExNTkyOX0.MZQTCM2vplHzITp48V3IVBr8UAasYrb73dKk5dkHNHs\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"cookie\": \"_hjAbsoluteSessionInProgress=0; _hjSession_2685642=eyJpZCI6IjIxMDE4ZTViLTE3MzEtNDgyZC05YWE5LWRjYzdlNmUzMmRkMiIsImNyZWF0ZWQiOjE2NjkxMTMxNDU5MDMsImluU2FtcGxlIjpmYWxzZX0=; _hjFirstSeen=1; _hjSessionUser_2685642=eyJpZCI6ImE4NWRmNGU0LWE4MTEtNTcxMy05OWViLWY0YjQ0MjVmNThhOCIsImNyZWF0ZWQiOjE2NjkxMTMxNDU3ODUsImV4aXN0aW5nIjp0cnVlfQ==; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5ZDAwNzY3ZGI1ZDM0MDhiNDAwNCIsImlkIjoxMTIyMzM5ODQ1NjM4MiwidGltZVN0YW1wIjoxNjY5MTEzMTQ0NDYzfSwiaWF0IjoxNjY5MTEzMTQ0LCJleHAiOjE2NjkxMTQwNDR9._4lLaX9-9YSuAb5FgMQFA3c8hmQI8yDxG9xHKOF3eak; sessionId=s%3Ak1DlIm-517vZxxd_t9p921cvSbVYnYMf.x5AMpkrfYParmtlWB0hxp0boHx7vlFdSc2M6ckErMUU\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"vary\": \"Origin\",\n  \"access-control-allow-credentials\": \"true\",\n  \"x-ratelimit-limit\": \"500\",\n  \"x-ratelimit-remaining\": \"490\",\n  \"x-ratelimit-reset\": \"1669115078\",\n  \"x-cloud-trace-context\": \"2c199844b95a4d0c7e82eae326d9c6bc\",\n  \"date\": \"Tue, 22 Nov 2022 11:03:49 GMT\",\n  \"content-type\": \"text/html\",\n  \"server\": \"Google Frontend\",\n  \"content-length\": \"12\"\n}\nBody: Unauthorized\n\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:160310:21\nFrom previous event:\n    at Context.request (http://localhost:52459/__cypress/runner/cypress_runner.js:160306:84)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:170970:15\nFrom previous event:\n    at runCommand (http://localhost:52459/__cypress/runner/cypress_runner.js:170949:8)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:171123:16\nFrom previous event:\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:34)\nFrom previous event:\n    at Promise.catch.err.name (http://localhost:52459/__cypress/runner/cypress_runner.js:171136:37)\nFrom previous event:\n    at run (http://localhost:52459/__cypress/runner/cypress_runner.js:171129:21)\n    at cy.<computed> [as then] (http://localhost:52459/__cypress/runner/cypress_runner.js:171586:11)\n    at runnable.fn (http://localhost:52459/__cypress/runner/cypress_runner.js:171813:21)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105099:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (http://localhost:52459/__cypress/runner/cypress_runner.js:105758:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105884:12\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105667:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105677:7\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105579:14)\n    at Hook.<anonymous> (http://localhost:52459/__cypress/runner/cypress_runner.js:105640:7)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:177523:22)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177550:11\nFrom previous event:\n    at onNext (http://localhost:52459/__cypress/runner/cypress_runner.js:177547:57)\n    at done (http://localhost:52459/__cypress/runner/cypress_runner.js:105039:5)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105122:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105601:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105645:5\n    at timeslice (http://localhost:52459/__cypress/runner/cypress_runner.js:99571:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I should see response 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sorting-functionality;verify-sorting-options-for-alphabetically-as-a-admin",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Verify sorting options for Alphabetically as a Admin",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@6",
+            "line": 29
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "I am sorting out \"Alphabetically\" as \"Admin\"",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=alphabetic&sortDirection=desc&status=active,draft\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=alphabetic&sortDirection=desc&status=active,draft\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5YTY3NzY3ZGI1ZDM0MDhiNDAwMSIsImlkIjoxMjM0OTg3NjM0NTYyMzIzLCJ0aW1lU3RhbXAiOjE2NjkxMTUwMjk0NDd9LCJpYXQiOjE2NjkxMTUwMjksImV4cCI6MTY2OTExNTkyOX0.RDdjxpvAg9rM1ItXTcOfg_cGB0mmxxi6Yu8D7pYbPRQ\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"cookie\": \"_hjAbsoluteSessionInProgress=0; _hjSession_2685642=eyJpZCI6IjIxMDE4ZTViLTE3MzEtNDgyZC05YWE5LWRjYzdlNmUzMmRkMiIsImNyZWF0ZWQiOjE2NjkxMTMxNDU5MDMsImluU2FtcGxlIjpmYWxzZX0=; _hjFirstSeen=1; _hjSessionUser_2685642=eyJpZCI6ImE4NWRmNGU0LWE4MTEtNTcxMy05OWViLWY0YjQ0MjVmNThhOCIsImNyZWF0ZWQiOjE2NjkxMTMxNDU3ODUsImV4aXN0aW5nIjp0cnVlfQ==; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5ZDAwNzY3ZGI1ZDM0MDhiNDAwNCIsImlkIjoxMTIyMzM5ODQ1NjM4MiwidGltZVN0YW1wIjoxNjY5MTEzMTQ0NDYzfSwiaWF0IjoxNjY5MTEzMTQ0LCJleHAiOjE2NjkxMTQwNDR9._4lLaX9-9YSuAb5FgMQFA3c8hmQI8yDxG9xHKOF3eak; sessionId=s%3Ak1DlIm-517vZxxd_t9p921cvSbVYnYMf.x5AMpkrfYParmtlWB0hxp0boHx7vlFdSc2M6ckErMUU\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"vary\": \"Origin\",\n  \"access-control-allow-credentials\": \"true\",\n  \"x-ratelimit-limit\": \"500\",\n  \"x-ratelimit-remaining\": \"488\",\n  \"x-ratelimit-reset\": \"1669115078\",\n  \"x-cloud-trace-context\": \"791dcc883d6c7943f74804950478af0e\",\n  \"date\": \"Tue, 22 Nov 2022 11:03:49 GMT\",\n  \"content-type\": \"text/html\",\n  \"server\": \"Google Frontend\",\n  \"content-length\": \"12\"\n}\nBody: Unauthorized\n\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:160310:21\nFrom previous event:\n    at Context.request (http://localhost:52459/__cypress/runner/cypress_runner.js:160306:84)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:170970:15\nFrom previous event:\n    at runCommand (http://localhost:52459/__cypress/runner/cypress_runner.js:170949:8)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:171123:16\nFrom previous event:\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:34)\nFrom previous event:\n    at Promise.catch.err.name (http://localhost:52459/__cypress/runner/cypress_runner.js:171136:37)\nFrom previous event:\n    at run (http://localhost:52459/__cypress/runner/cypress_runner.js:171129:21)\n    at cy.<computed> [as then] (http://localhost:52459/__cypress/runner/cypress_runner.js:171586:11)\n    at runnable.fn (http://localhost:52459/__cypress/runner/cypress_runner.js:171813:21)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105099:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (http://localhost:52459/__cypress/runner/cypress_runner.js:105758:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105884:12\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105667:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105677:7\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105579:14)\n    at Hook.<anonymous> (http://localhost:52459/__cypress/runner/cypress_runner.js:105640:7)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:177523:22)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177550:11\nFrom previous event:\n    at onNext (http://localhost:52459/__cypress/runner/cypress_runner.js:177547:57)\n    at done (http://localhost:52459/__cypress/runner/cypress_runner.js:105039:5)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105122:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105601:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105645:5\n    at timeslice (http://localhost:52459/__cypress/runner/cypress_runner.js:99571:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I should see response 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sorting-functionality;verify-sorting-options-for-metadata-quality-as-a-admin",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Verify sorting options for Metadata quality as a Admin",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@7",
+            "line": 34
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "I am sorting out \"Metadata quality\" as \"Admin\"",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=metadata&sortDirection=desc&status=active,draft\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=metadata&sortDirection=desc&status=active,draft\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5YTY3NzY3ZGI1ZDM0MDhiNDAwMSIsImlkIjoxMjM0OTg3NjM0NTYyMzIzLCJ0aW1lU3RhbXAiOjE2NjkxMTUwMjk2NTh9LCJpYXQiOjE2NjkxMTUwMjksImV4cCI6MTY2OTExNTkyOX0.dmfqp7q7ExxyR2WmRWaVBP68U8_doKn4Du21JtgaefM\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"cookie\": \"_hjAbsoluteSessionInProgress=0; _hjSession_2685642=eyJpZCI6IjIxMDE4ZTViLTE3MzEtNDgyZC05YWE5LWRjYzdlNmUzMmRkMiIsImNyZWF0ZWQiOjE2NjkxMTMxNDU5MDMsImluU2FtcGxlIjpmYWxzZX0=; _hjFirstSeen=1; _hjSessionUser_2685642=eyJpZCI6ImE4NWRmNGU0LWE4MTEtNTcxMy05OWViLWY0YjQ0MjVmNThhOCIsImNyZWF0ZWQiOjE2NjkxMTMxNDU3ODUsImV4aXN0aW5nIjp0cnVlfQ==; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5ZDAwNzY3ZGI1ZDM0MDhiNDAwNCIsImlkIjoxMTIyMzM5ODQ1NjM4MiwidGltZVN0YW1wIjoxNjY5MTEzMTQ0NDYzfSwiaWF0IjoxNjY5MTEzMTQ0LCJleHAiOjE2NjkxMTQwNDR9._4lLaX9-9YSuAb5FgMQFA3c8hmQI8yDxG9xHKOF3eak; sessionId=s%3Ak1DlIm-517vZxxd_t9p921cvSbVYnYMf.x5AMpkrfYParmtlWB0hxp0boHx7vlFdSc2M6ckErMUU\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"vary\": \"Origin\",\n  \"access-control-allow-credentials\": \"true\",\n  \"x-ratelimit-limit\": \"500\",\n  \"x-ratelimit-remaining\": \"486\",\n  \"x-ratelimit-reset\": \"1669115078\",\n  \"x-cloud-trace-context\": \"ef279846cbbbb3a43bc0b1f85d710994\",\n  \"date\": \"Tue, 22 Nov 2022 11:03:49 GMT\",\n  \"content-type\": \"text/html\",\n  \"server\": \"Google Frontend\",\n  \"content-length\": \"12\"\n}\nBody: Unauthorized\n\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:160310:21\nFrom previous event:\n    at Context.request (http://localhost:52459/__cypress/runner/cypress_runner.js:160306:84)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:170970:15\nFrom previous event:\n    at runCommand (http://localhost:52459/__cypress/runner/cypress_runner.js:170949:8)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:171123:16\nFrom previous event:\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:34)\nFrom previous event:\n    at Promise.catch.err.name (http://localhost:52459/__cypress/runner/cypress_runner.js:171136:37)\nFrom previous event:\n    at run (http://localhost:52459/__cypress/runner/cypress_runner.js:171129:21)\n    at cy.<computed> [as then] (http://localhost:52459/__cypress/runner/cypress_runner.js:171586:11)\n    at runnable.fn (http://localhost:52459/__cypress/runner/cypress_runner.js:171813:21)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105099:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (http://localhost:52459/__cypress/runner/cypress_runner.js:105758:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105884:12\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105667:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105677:7\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105579:14)\n    at Hook.<anonymous> (http://localhost:52459/__cypress/runner/cypress_runner.js:105640:7)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:177523:22)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177550:11\nFrom previous event:\n    at onNext (http://localhost:52459/__cypress/runner/cypress_runner.js:177547:57)\n    at done (http://localhost:52459/__cypress/runner/cypress_runner.js:105039:5)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105122:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105601:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105645:5\n    at timeslice (http://localhost:52459/__cypress/runner/cypress_runner.js:99571:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "I should see response 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sorting-functionality;verify-sorting-options-for-recently-published-as-a-admin",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Verify sorting options for Recently published as a Admin",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@8",
+            "line": 39
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 41,
+            "name": "I am sorting out \"Recently published\" as \"Admin\"",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=recentlyadded&sortDirection=desc&status=active,draft\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://api.uat.healthdatagateway.org/api/v1/dataset-onboarding/publisher/5f7b1a2bce9f65e6ed83e7da?limit=1000&page=1&sortBy=recentlyadded&sortDirection=desc&status=active,draft\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5YTY3NzY3ZGI1ZDM0MDhiNDAwMSIsImlkIjoxMjM0OTg3NjM0NTYyMzIzLCJ0aW1lU3RhbXAiOjE2NjkxMTUwMjk4NDl9LCJpYXQiOjE2NjkxMTUwMjksImV4cCI6MTY2OTExNTkyOX0.4narVku7tH8T5VltdXOaawBH-KtqpZK7DJ_6Bqbql6c\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"cookie\": \"_hjAbsoluteSessionInProgress=0; _hjSession_2685642=eyJpZCI6IjIxMDE4ZTViLTE3MzEtNDgyZC05YWE5LWRjYzdlNmUzMmRkMiIsImNyZWF0ZWQiOjE2NjkxMTMxNDU5MDMsImluU2FtcGxlIjpmYWxzZX0=; _hjFirstSeen=1; _hjSessionUser_2685642=eyJpZCI6ImE4NWRmNGU0LWE4MTEtNTcxMy05OWViLWY0YjQ0MjVmNThhOCIsImNyZWF0ZWQiOjE2NjkxMTMxNDU3ODUsImV4aXN0aW5nIjp0cnVlfQ==; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYyMzQ5ZDAwNzY3ZGI1ZDM0MDhiNDAwNCIsImlkIjoxMTIyMzM5ODQ1NjM4MiwidGltZVN0YW1wIjoxNjY5MTEzMTQ0NDYzfSwiaWF0IjoxNjY5MTEzMTQ0LCJleHAiOjE2NjkxMTQwNDR9._4lLaX9-9YSuAb5FgMQFA3c8hmQI8yDxG9xHKOF3eak; sessionId=s%3Ak1DlIm-517vZxxd_t9p921cvSbVYnYMf.x5AMpkrfYParmtlWB0hxp0boHx7vlFdSc2M6ckErMUU\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"vary\": \"Origin\",\n  \"access-control-allow-credentials\": \"true\",\n  \"x-ratelimit-limit\": \"500\",\n  \"x-ratelimit-remaining\": \"484\",\n  \"x-ratelimit-reset\": \"1669115078\",\n  \"x-cloud-trace-context\": \"90656bb00c7186e9538e16dc418073fc\",\n  \"date\": \"Tue, 22 Nov 2022 11:03:49 GMT\",\n  \"content-type\": \"text/html\",\n  \"server\": \"Google Frontend\",\n  \"content-length\": \"12\"\n}\nBody: Unauthorized\n\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:160310:21\nFrom previous event:\n    at Context.request (http://localhost:52459/__cypress/runner/cypress_runner.js:160306:84)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:170970:15\nFrom previous event:\n    at runCommand (http://localhost:52459/__cypress/runner/cypress_runner.js:170949:8)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:171123:16\nFrom previous event:\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:171095:34)\nFrom previous event:\n    at Promise.catch.err.name (http://localhost:52459/__cypress/runner/cypress_runner.js:171136:37)\nFrom previous event:\n    at run (http://localhost:52459/__cypress/runner/cypress_runner.js:171129:21)\n    at cy.<computed> [as then] (http://localhost:52459/__cypress/runner/cypress_runner.js:171586:11)\n    at runnable.fn (http://localhost:52459/__cypress/runner/cypress_runner.js:171813:21)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105099:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (http://localhost:52459/__cypress/runner/cypress_runner.js:105758:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105884:12\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105667:14)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105677:7\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105579:14)\n    at Hook.<anonymous> (http://localhost:52459/__cypress/runner/cypress_runner.js:105640:7)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:177523:22)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177550:11\nFrom previous event:\n    at onNext (http://localhost:52459/__cypress/runner/cypress_runner.js:177547:57)\n    at done (http://localhost:52459/__cypress/runner/cypress_runner.js:105039:5)\n    at callFn (http://localhost:52459/__cypress/runner/cypress_runner.js:105122:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:105086:7)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:177607:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:52459/__cypress/runner/cypress_runner.js:177595:17)\n    at $Cypress.action (http://localhost:52459/__cypress/runner/cypress_runner.js:167954:28)\n    at Runnable.run (http://localhost:52459/__cypress/runner/cypress_runner.js:175744:13)\n    at next (http://localhost:52459/__cypress/runner/cypress_runner.js:105601:10)\n    at http://localhost:52459/__cypress/runner/cypress_runner.js:105645:5\n    at timeslice (http://localhost:52459/__cypress/runner/cypress_runner.js:99571:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "I should see response 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

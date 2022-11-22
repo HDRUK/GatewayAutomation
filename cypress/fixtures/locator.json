@@ -1,0 +1,109 @@
+{
+    "signIn": {
+        "signInBtn": "#myBtn"
+    },
+    "login": {
+        "firstName": "[data-testid='first-name']",
+        "lastName": "#lastname",
+        "email": "#email",
+        "sector": ".dropdown-toggle.btn.btn-white",
+        "sectorValue": ".dropdown-menu.show",
+        "terms": "#terms",
+        "updateBtn": ".addButton.btn.btn-primary"
+    },
+    "search": {
+        "search": ".css-83xut7",
+        "searchButton": ".ui-Button.css-1og6tvc",
+        "paperLink": ".purple-bold-16.css-d5w927"
+    },
+    "request": {
+        "requestAccess": ".btn.btn-primary.addButton.pointer.float-right",
+        "startApplication": ".ui-Button.css-1u4yvgi"
+    },
+    "fillDetails": {
+        "page1": {
+            "fullName": "#safepeopleprimaryapplicantfullname",
+            "jobTitle": "#safepeopleprimaryapplicantjobtitle",
+            "applicantEmail": "#safepeopleprimaryapplicantemail",
+            "organisationName": "#safepeopleprimaryapplicantorganisationname",
+            "dataSecurityRadioYesBtn": "#safepeopleprimaryapplicantorganisationdatasecurityprotectionkit-label",
+            "dataSecurityRadioNoBtn": "(':nth-child(2) > #safepeopleprimaryapplicantorganisationdatasecurityprotectionkit-label')"
+        },
+        "page2": {},
+        "page3": {},
+        "page4": {
+            "titleOfProject": "#safeprojectprojectdetailstitle",
+            "typeOfProjectRadioBtnResearch": "#safeprojectprojectdetailstype-label",
+            "typeOfProjectRadioBtnOther": "#safeprojectprojectdetailstype-label",
+            "summaryOfTheProject": "#safeprojectprojectdetailslaysummary",
+            "projectAimsObjectivesRationale": "#safeprojectprojectdetailsaimsobjectivesrationale",
+            "projectObjectives": "#safeprojectprojectdetailsdatausageforobjectives",
+            "pipe": "#safeprojectprojectdetailspublicpatientinvolvementengagement"
+        },
+        "page5": {
+            "funderRadioYesBtn": "#safeprojectfunderinformationprojecthasfunder-label",
+            "funderRadioNoBtn": "#safeprojectfunderinformationprojecthasfunder-label"
+        },
+        "page6": {
+            "sponsorRadioYesBtn": "#safeprojectsponsorinformationprojecthassponsor-label",
+            "sponsorRadioNoBtn": "#safeprojectsponsorinformationprojecthassponsor-label"
+        },
+        "page7": {
+            "commercialInterestRadioYesBtn": "#safeprojectdeclarationofinteresthascommercialinterest-label",
+            "commercialInterestRadioNoBtn": "#safeprojectdeclarationofinteresthascommercialinterest-label"
+        },
+        "page8": {
+            "safeDatafieldDataRequiredJustification": "#safedatadatafieldsdatarequiredjustification"
+        },
+        "page9": {},
+        "page10": {},
+        "page11": {},
+        "page12": {
+            "lawfulBasic": "#safedatalawfulbasisgdprarticle6basis-label"
+        },
+        "page13": {},
+        "page14": {
+            "ethicalApprover": "#safedataethicsapprovalapprovalobtained-label",
+            "ethicOpinion": "#safedataethicsapprovalinsightresearch-label"
+        },
+        "page15": {},
+        "page16": {
+            "outsideUK": "#safedatadataflowdatatransferedoutsideuk-label"
+        },
+        "page17": {
+            "findingDisseminated": "#safeoutputsoutputsdisseminationplansproposalfindings",
+            "outputDisseminated": "#safeoutputsoutputsdisseminationplansmilestones",
+            "disControlPolicy": "#safeoutputsoutputsdisseminationplansdisclosurecontrolpolicy"
+        },
+        "page18": {
+            "date": ".react-datepicker__day.react-datepicker__day--024",
+            "dateField": ".react-datepicker-ignore-onclickoutside"
+        },
+        "page19": {
+            "periodExpired": "#safeoutputsdataretentiondestructionmethod"
+        },
+        "page20": {
+            "addFullName": "#additionalinformationinvoicecontactfullname",
+            "addJobTitle": "#additionalinformationinvoicecontactjobtitle",
+            "additionAddLine1": "#additionalinformationinvoicecontactaddressline1",
+            "addCity": "#additionalinformationinvoicecontactcity",
+            "addPostcode": "#additionalinformationinvoicecontactpostcode",
+            "addCountry": "#additionalinformationinvoicecontactcountry",
+            "addEmail": "#additionalinformationinvoicecontactemail"
+        },
+        "buttons": {
+            "nextBtn": ".ui-Button.css-1og6tvc",
+            "submitApplication": ".css-t7nm82"
+        }
+    },
+    "onboardingDatasets": {
+        "userNameDropDown": ".user-dropdown-menu",
+        "otherHealthDataResearchUkLink": ".dropdown-sub-menu"
+    },
+    "onOboardingDatasetsForm": {
+        "summary": {
+        "abstract": "//*[@id='properties/summary/abstract']"
+        
+        }
+    }
+}

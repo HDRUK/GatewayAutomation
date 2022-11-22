@@ -1,0 +1,207 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "HDR UK Papers & Preprints",
+    "line": 2,
+    "id": "hdr-uk-papers-&-preprints",
+    "tags": [
+      {
+        "name": "@all",
+        "line": 1
+      }
+    ],
+    "uri": "requestAccess.feature",
+    "elements": [
+      {
+        "id": "hdr-uk-papers-&-preprints;request-access",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Request Access",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I on the HDR Dataset home page",
+            "result": {
+              "status": "passed",
+              "duration": 1288000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I logged in to the applicatin via \"Google\" as \"custodian\"",
+            "result": {
+              "status": "passed",
+              "duration": 5022000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I search for \"HDR UK Papers & Preprints\"",
+            "result": {
+              "status": "passed",
+              "duration": 6364000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I am clicking \"HDR UK Papers & Preprints\"",
+            "result": {
+              "status": "passed",
+              "duration": 1104000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I am clicking \"How to request access\"",
+            "result": {
+              "status": "passed",
+              "duration": 664000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I am clicking \"Start application\"",
+            "result": {
+              "status": "passed",
+              "duration": 8315000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I fill details in safe people",
+            "result": {
+              "status": "failed",
+              "duration": 402000000,
+              "error_message": "ReferenceError: nextBtn is not defined\n    at SafePeoplePage.otherIndivisuals (https://web.uat.healthdatagateway.org/__cypress/tests?p=cypress/integration/features/test/requestAccess.feature:461:24)\n    at Context.eval (https://web.uat.healthdatagateway.org/__cypress/tests?p=cypress/integration/features/test/requestAccess.feature:740:18)\n    at Context.resolveAndRunStepDefinition (https://web.uat.healthdatagateway.org/__cypress/tests?p=cypress/integration/features/test/requestAccess.feature:11235:29)\n    at Context.eval (https://web.uat.healthdatagateway.org/__cypress/tests?p=cypress/integration/features/test/requestAccess.feature:10556:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I fill details in safe project",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I fill details in safe data",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I fill details in safe settings",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I fill details in safe outputs",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I submit application",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see message \"Your application was submitted successfully\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "hdr-uk-papers-&-preprints;search-functionality",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Search Functionality",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@2",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I on the HDR Dataset home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I search for \"Covid\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should see all the results with name contains \"Covid\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
