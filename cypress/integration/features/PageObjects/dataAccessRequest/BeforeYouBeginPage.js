@@ -25,7 +25,7 @@ class BeforeYouBeginPage {
         commonUtil.typeValue(applicationTitle, "data.dataAccessRequest.applicationTitle", "xpath");
         commonUtil.clickBtn(confirmButton2, "xpath");
         cy.get(chkInviteContributors, {timeout: 5000}).check({force: true});
-        //cy.wait(5000);
+        cy.wait(5000);
         cy.get(chkReadAdvice, {timeout: 5000}).check({force: true});
         //cy.wait(5000);
         cy.get(chkCommunicateAdvice, {timeout: 5000}).check({force: true});
