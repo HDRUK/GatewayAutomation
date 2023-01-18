@@ -7,13 +7,13 @@ const distributionReleaseDate = ".react-datepicker__day--023    ";
 const startDateButton = ":nth-child(4) > :nth-child(1) > .form-group > :nth-child(2) > .d-flex > .flex-grow-1 > .react-datepicker-wrapper > .react-datepicker__input-container > input";
 const startDate = ".react-datepicker__day--022";
 const endDateButton = ":nth-child(5) > :nth-child(1) > .form-group > :nth-child(2) > .d-flex > .flex-grow-1 > .react-datepicker-wrapper > .react-datepicker__input-container > input";
-const endDate = ":nth-child(6) > .react-datepicker__day--009";
+const endDate = ".react-datepicker__day--012";
 const timeLag = "//*[@id='properties/provenance/temporal/timeLag']";
 const nextBtn = ".css-1og6tvc";
 const purpose = ":nth-child(2) > :nth-child(1) > .form-group > :nth-child(2) > .d-flex > .flex-grow-1 > .rbt > .rbt-input-multi > .rbt-input-wrapper > div > .rbt-input-main"
 const source = "body > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > form:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)";
 const collectionSituation = "body > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > form:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)";
-const submitApplication = ".ui-Button.css-t7nm82";
+const submitApplicationForReview = ".ui-Button.css-t7nm82";
 const addButton = ".addButton";
 const accrualPeriodicityErrorText = "//*[@id='darCenterCol']/div[2]/form/div/div/div[1]/div/div[2]/div[1]/div/div[2]/div[1]";
 const startDateErrorText = "//*[@id='darCenterCol']/div[2]/form/div/div/div[1]/div/div[4]/div[1]/div/div[2]/div[1]";
@@ -62,7 +62,7 @@ class ProvenancePage {
          expect(text).to.eq('Please select a valid date')
         });
         commonUtil.clickBtn(addButton, "get");
-        commonUtil.click(submitApplication);
+        commonUtil.clickBtn(submitApplicationForReview, "get");
         cy.xpath(accrualPeriodicityErrorText)
          .invoke("text")
          .then(text => {
@@ -73,6 +73,10 @@ class ProvenancePage {
          .then(text => {
          expect(text).to.eq('Please select an option')
         });
+        commonUtil.popupWindowValidation();
+    }
+    temporalNegativeFields() {
+        commonUtil.clickBtn(submitApplicationForReview, "get");
         commonUtil.clickBtn(addButton, "get");
         cy.xpath(accrualPeriodicity).select("CONTINUOUS");
         cy.get(startDateButton).click();
@@ -80,7 +84,7 @@ class ProvenancePage {
         commonUtil.click(startDate);
         cy.wait(1000);
         cy.xpath(timeLag).select("VARIABLE");
-        commonUtil.click(submitApplication);
+        commonUtil.clickBtn(submitApplicationForReview, "get");
     }
 }
 export default ProvenancePage

@@ -15,7 +15,7 @@
       {
         "id": "hdr-uk-papers-&-preprints;verifying-data-access-request-form-is-submitted-successfully",
         "keyword": "Scenario",
-        "line": 5,
+        "line": 14,
         "name": "Verifying Data Access Request form is submitted successfully",
         "tags": [
           {
@@ -23,8 +23,8 @@
             "line": 1
           },
           {
-            "name": "@1",
-            "line": 4
+            "name": "@focus",
+            "line": 13
           }
         ],
         "type": "scenario",
@@ -32,129 +32,223 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 15,
             "name": "I on the HDR Dataset home page and logged in to the application as \"applicant\"",
             "result": {
               "status": "passed",
-              "duration": 1566000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "I search for \"HDR UK Papers & Preprints\"",
-            "result": {
-              "status": "passed",
-              "duration": 5636000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I am clicking \"HDR UK Papers & Preprints\"",
-            "result": {
-              "status": "passed",
-              "duration": 677000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "I am clicking \"How to request access\"",
-            "result": {
-              "status": "passed",
-              "duration": 1106000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 10,
-            "name": "I am clicking \"Start application\"",
-            "result": {
-              "status": "passed",
-              "duration": 8326000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "I fill details in before you begin",
-            "result": {
-              "status": "passed",
-              "duration": 15626000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "I fill details in safe people",
-            "result": {
-              "status": "passed",
-              "duration": 5585000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "I fill details in safe project",
-            "result": {
-              "status": "passed",
-              "duration": 44488000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "I fill details in safe data",
-            "result": {
-              "status": "passed",
-              "duration": 4951000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "I fill details in safe settings",
-            "result": {
-              "status": "passed",
-              "duration": 8669000000
+              "duration": 1350000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 16,
-            "name": "I fill details in safe outputs",
+            "name": "I search for \"HDR UK Papers & Preprints\"",
             "result": {
               "status": "passed",
-              "duration": 12730000000
+              "duration": 6844000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 17,
-            "name": "I submit application for \"dar\"",
+            "name": "I am clicking \"HDR UK Papers & Preprints\"",
+            "result": {
+              "status": "passed",
+              "duration": 481000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I am clicking \"How to request access\"",
+            "result": {
+              "status": "passed",
+              "duration": 1352000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I am clicking \"Start application\"",
+            "result": {
+              "status": "passed",
+              "duration": 8361000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I fill details in before you begin",
             "result": {
               "status": "failed",
-              "duration": 4336000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.confirmSubmissionModal-footer--wrap > .css-1og6tvc`, but never found it.\n    at ensureExistence (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:162649:25)\n    at $Cy.ensureElExistence (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:162667:12)\n    at ensureExistence (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:151782:23)\n    at onFailFn (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:151820:9)\nFrom previous event:\n    at $Cy.verifyUpcomingAssertions (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:151862:63)\n    at https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:159645:21\nFrom previous event:\n    at resolveElements (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:159640:41)\n    at tryFn (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:167065:21)\n    at whenStable (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:167103:12)\n    at https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:166598:16"
+              "duration": 1000000,
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n    at mouseAction (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:153308:17)\n    at Context.click (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:153482:14)\n    at Context.<anonymous> (https://web.uat.healthdatagateway.org/__cypress/runner/cypress_runner.js:171546:21)\nFrom Your Spec Code:\n    at CommonUtil.click (https://web.uat.healthdatagateway.org/__cypress/tests?p=cypress/integration/features/test/dataAccessRequestForm.feature:2735:28)\n    at BeforeYouBeginPage.beforeYouBegin (https://web.uat.healthdatagateway.org/__cypress/tests?p=cypress/integration/features/test/dataAccessRequestForm.feature:1244:18)\n    at Context.eval (https://web.uat.healthdatagateway.org/__cypress/tests?p=cypress/integration/features/test/dataAccessRequestForm.feature:2283:22)\n    at Context.resolveAndRunStepDefinition (https://web.uat.healthdatagateway.org/__cypress/tests?p=cypress/integration/features/test/dataAccessRequestForm.feature:13538:29)\n    at Context.eval (https://web.uat.healthdatagateway.org/__cypress/tests?p=cypress/integration/features/test/dataAccessRequestForm.feature:12859:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I fill details in safe people",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I fill details in safe project",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I fill details in safe data",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I fill details in safe settings",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I fill details in safe outputs",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I fill details in additional information & files",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I submit application for \"dar\"",
+            "result": {
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 28,
             "name": "I should see message \"Your application was submitted successfully\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "hdr-uk-papers-&-preprints;validating-data-access-request-form-for-all-the-mandatory-fields",
+        "keyword": "Scenario",
+        "line": 174,
+        "name": "Validating Data Access Request form for all the mandatory fields",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@16",
+            "line": 173
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 175,
+            "name": "I on the HDR Dataset home page and logged in to the application as \"applicant\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 176,
+            "name": "I search for \"HDR UK Papers & Preprints\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 177,
+            "name": "I am clicking \"HDR UK Papers & Preprints\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 178,
+            "name": "I am clicking \"How to request access\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 179,
+            "name": "I am clicking \"Start application\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 180,
+            "name": "I am on \"AdditionalInformation&FilesDataSharingAgreementSignatory\" page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 181,
+            "name": "I click submit application button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 182,
+            "name": "I should validate all the mandatory fields on \"AdditionalInformation&FilesDataSharingAgreementSignatory\" page",
             "result": {
               "status": "skipped"
             }

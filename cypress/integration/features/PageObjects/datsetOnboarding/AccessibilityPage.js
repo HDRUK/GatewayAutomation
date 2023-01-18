@@ -18,7 +18,7 @@ const dataController = "//*[@id='properties/accessibility/access/dataController'
 const dataProcessor = "//*[@id='properties/accessibility/access/dataProcessor']";
 const isReferencedBy = "//*[@id='darCenterCol']/div[2]/form/div/div/div[1]/div/div[6]/div[1]/div/div[2]/div/div/div/div[1]/input";
 const accessService = "//*[@id='properties/accessibility/access/accessService']";
-const submitApplication = ".ui-Button.css-t7nm82";
+const submitApplicationForReview = ".ui-Button.css-t7nm82";
 const addButton = ".addButton";
 const accessRightErrorText = "//*[@id='darCenterCol']/div[2]/form/div/div/div[1]/div/div[2]/div[1]/div/div[2]/div[1]";
 const jurisdictionErrorText = "//*[@id='darCenterCol']/div[2]/form/div/div/div[1]/div/div[6]/div[1]/div/div[2]/div[1]";
@@ -73,20 +73,23 @@ class AccessibilityPage {
             .then(text => {
                 expect(text).to.eq('Please enter a value between 5 and 5000 characters long')
             });
+        commonUtil.clickBtn(submitApplicationForReview, "get");
+        commonUtil.popupWindowValidation();
+    };
+    accessNegativeFields() {
         commonUtil.clickBtn(addButton, "get");
         cy.get(accessRight).type("http://www.njrcentre.org.uk/njrcentre/Research/Research-requests https://www.hqip.org.uk/national-programmes/accessing-ncapop-data");
         cy.xpath(jurisdiction).type("England{downArrow}{enter}");
         cy.xpath(dataController).type("Healthcare Quality Improvement Partnership jointly with NHS England");
-        commonUtil.click(submitApplication);
-    };
+        commonUtil.clickBtn(submitApplicationForReview, "get");
+    }
     formatsAndStandardsNegative() {
         cy.get(".question-wrap").then(($texts) => {
 
             cy.log($texts.length)
-
-            for (let i = 2; i <= $texts.length; i++) {
-
-                let text = "//*[@id='darCenterCol']/div[2]/form/div/div/div[1]/div/div[" + i + "]/div[1]/div/div[2]/div[1]";
+           
+            for (let i = 1; i <= $texts.length; i++) {
+               let text = "//*[@id='darCenterCol']/div[2]/form/div/div/div[1]/div/div[" + (i+1) + "]/div[1]/div/div[2]/div[1]";
                 cy.xpath(text).then(($el) => {
                     if ($el.text() == "At least one entry is required") {
                         cy.log(text);
@@ -95,12 +98,33 @@ class AccessibilityPage {
                 })
             }
         });
+        commonUtil.clickBtn(submitApplicationForReview, "get");
+        commonUtil.popupWindowValidation();
+    }
+    formatsAndStandardsNegativeFields() {
         commonUtil.clickBtn(addButton, "get");
         cy.get(vocabularyEncodingScheme).type("LOCAL").get('#-item-0 > .dropdown-item').click();
         cy.get(conformsTo).type("LOCAL").get('.dropdown-item').click();
         cy.get(language).type("English").get('.dropdown-item').click();
         cy.xpath(format).type("Tab delimited file made available via NJR Data Access Portal");
-        commonUtil.click(submitApplication);
+        commonUtil.clickBtn(submitApplicationForReview, "get");
+    }
+    accessBoundaryValueCheck() {
+        cy.get(accessRight).type("testing");
+        commonUtil.xpathType(dataController, "test");
+        commonUtil.clickBtn(submitApplicationForReview, "get");
+        commonUtil.popupWindowValidation();
+        commonUtil.clickBtn(addButton, "get");
+        cy.xpath(accessRightErrorText)
+            .invoke("text")
+            .then(text => {
+                expect(text).to.eq('Please enter a valid URL. Must include http(s):// or In Progress')
+            });
+        cy.xpath(accessRightErrorText)
+            .invoke("text")
+            .then(text => {
+                expect(text).to.eq('Please enter a valid URL. Must include http(s):// or In Progress')
+            });
     }
 }
 export default AccessibilityPage

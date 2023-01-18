@@ -4,7 +4,9 @@ import CommonUtil from "../util/CommonUtil";
 //const otherHealthDataResearchUkLink = ".dropdown-sub-menu";
 //const datasetsDropdown = ".black-14.user-dropdown-item.dropdown-item";
 const datasetsDropdownn = "//*[@id='desktopSearchBar']/div/div[2]/div/div[2]/div/div/ul/div[3]/ul/a[5]";
-const addANewDatasetButton = "//*[@id='root']/div[4]/div[2]/div[2]/div/div/div[2]/div[1]/div/div[2]/button"
+//const datasetsDropdownn = "//*[@id='desktopSearchBar']/div/div[2]/div/div[2]/div/div/ul/div[3]/div[2]/ul/a[5]";
+//const datasetsDropdownn = "//a[contains(text(),'Datasets')]"
+const addANewDatasetButton = "//*[@id='root']/div[4]/div[2]/div[2]/div/div/div[2]/div[1]/div/div[2]/button";
 
 const commonUtil = new CommonUtil();
 

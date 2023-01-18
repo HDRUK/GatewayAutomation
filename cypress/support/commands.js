@@ -399,7 +399,8 @@ Cypress.Commands.add('generateToken', (userRole) => {
     body: {
       grant_type: 'client_credentials',
       client_id: Cypress.env('auth0_clientID_applicant'),
-      client_secret: Cypress.env('auth0_clientSecret_applicant')
+      client_secret: Cypress.env('auth0_clientSecret_applicant'),
+      failOnStatusCode: false,
     }
   }).then(response =>{
     accesstoken = response.body.access_token
@@ -418,7 +419,8 @@ Cypress.Commands.add('generateToken', (userRole) => {
     body: {
       grant_type: 'client_credentials',
       client_id: Cypress.env('auth0_clientID_admin'),
-      client_secret: Cypress.env('auth0_clientSecret_admin')
+      client_secret: Cypress.env('auth0_clientSecret_admin'),
+      failOnStatusCode: false,
     }
   }).then(response =>{
     accesstoken = response.body.access_token
@@ -437,7 +439,8 @@ Cypress.Commands.add('generateToken', (userRole) => {
     body: {
       grant_type: 'client_credentials',
       client_id: Cypress.env('auth0_clientID_hdrcustodian'),
-      client_secret: Cypress.env('auth0_clientSecret_hdrcustodian')
+      client_secret: Cypress.env('auth0_clientSecret_hdrcustodian'),
+      failOnStatusCode: false,
     }
   }).then(response =>{
     accesstoken = response.body.access_token

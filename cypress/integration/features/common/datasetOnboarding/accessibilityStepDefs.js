@@ -7,9 +7,4 @@ When('I fill details in accessibility', () => {
     accessibilityPage.usage();
     accessibilityPage.acess();
     accessibilityPage.formatsAndStandards();
-});
-
-When('I verify error messages on accessibility', () => {
-    accessibilityPage.accessNegative();
-    accessibilityPage.formatsAndStandardsNegative();
-});
+})

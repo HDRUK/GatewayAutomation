@@ -6,8 +6,4 @@ const provenancePage = new ProvenancePage();
 When('I fill details in provenance', () => {
     provenancePage.origin();
     provenancePage.temporal();
-});
-
-When('I verify error messages on provenance', () => {
-    provenancePage.temporalNegative();
-});
+})

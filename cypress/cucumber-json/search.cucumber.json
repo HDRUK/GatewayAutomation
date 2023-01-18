@@ -145,8 +145,7 @@
             "line": 20,
             "name": "I on the HDR Dataset home page",
             "result": {
-              "status": "passed",
-              "duration": 639000000
+              "status": "undefined"
             }
           },
           {
@@ -155,7 +154,7 @@
             "line": 21,
             "name": "I should see login as \"applicant\"",
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             }
           }
         ]

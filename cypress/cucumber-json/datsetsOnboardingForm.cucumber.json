@@ -36,7 +36,7 @@
             "name": "I on the HDR Dataset home page and logged in to the application as \"custodian\"",
             "result": {
               "status": "passed",
-              "duration": 1946000000
+              "duration": 1880000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I navigate to datasets dashboard",
             "result": {
               "status": "passed",
-              "duration": 4716000000
+              "duration": 5129000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I am clicking \"Add a new dataset\"",
             "result": {
               "status": "passed",
-              "duration": 693000000
+              "duration": 875000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "I fill details in summary",
             "result": {
               "status": "passed",
-              "duration": 14473000000
+              "duration": 16120000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "I fill details in documentation",
             "result": {
               "status": "passed",
-              "duration": 14206000000
+              "duration": 17874000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "I fill details in coverage",
             "result": {
               "status": "passed",
-              "duration": 9185000000
+              "duration": 10500000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "I fill details in provenance",
             "result": {
               "status": "passed",
-              "duration": 15260000000
+              "duration": 16627000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "I fill details in accessibility",
             "result": {
               "status": "passed",
-              "duration": 27586000000
+              "duration": 34935000000
             }
           },
           {
@@ -116,7 +116,7 @@
             "name": "I fill details in enrichment and Linkage",
             "result": {
               "status": "passed",
-              "duration": 8062000000
+              "duration": 9324000000
             }
           },
           {
@@ -126,7 +126,7 @@
             "name": "I fill details in observations",
             "result": {
               "status": "passed",
-              "duration": 6472000000
+              "duration": 7228000000
             }
           },
           {
@@ -136,7 +136,7 @@
             "name": "I fill details in structural Metadata",
             "result": {
               "status": "passed",
-              "duration": 2138000000
+              "duration": 2385000000
             }
           },
           {
@@ -146,7 +146,7 @@
             "name": "I submit application for \"dataset\"",
             "result": {
               "status": "passed",
-              "duration": 697000000
+              "duration": 786000000
             }
           },
           {
@@ -156,24 +156,24 @@
             "name": "I should see message \"You have successfully submitted your dataset for review. You will be notified when a decision has been made.\"",
             "result": {
               "status": "passed",
-              "duration": 2198000000
+              "duration": 2384000000
             }
           }
         ]
       },
       {
-        "id": "datsets-onboarding-form;verifying-datasets-onboarding-form-for-all-the-mandatory-fields",
+        "id": "datsets-onboarding-form;validating-datasets-onboarding-form-for-all-the-mandatory-fields",
         "keyword": "Scenario",
-        "line": 21,
-        "name": "Verifying Datasets Onboarding form for all the mandatory fields",
+        "line": 49,
+        "name": "Validating Datasets Onboarding form for all the mandatory fields",
         "tags": [
           {
             "name": "@all",
             "line": 1
           },
           {
-            "name": "@2",
-            "line": 20
+            "name": "@6",
+            "line": 48
           }
         ],
         "type": "scenario",
@@ -181,7 +181,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 22,
+            "line": 50,
             "name": "I on the HDR Dataset home page and logged in to the application as \"custodian\"",
             "result": {
               "status": "skipped"
@@ -189,9 +189,9 @@
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 23,
-            "name": "I navigate to datasets dashboard",
+            "keyword": "And ",
+            "line": 51,
+            "name": "I am on \"Observations\" page",
             "result": {
               "status": "skipped"
             }
@@ -199,8 +199,54 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 24,
-            "name": "I am clicking \"Add a new dataset\"",
+            "line": 52,
+            "name": "I click submit for review button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 53,
+            "name": "I should validate all the mandatory fields on \"Observations\" page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "datsets-onboarding-form;validating-datasets-onboarding-form-for-all-boundary-value-check-with-character-limit",
+        "keyword": "Scenario",
+        "line": 70,
+        "name": "Validating Datasets Onboarding form for all Boundary value check with character limit",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@8",
+            "line": 69
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 71,
+            "name": "I on the HDR Dataset home page and logged in to the application as \"custodian\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "I am on \"Observations\" page",
             "result": {
               "status": "skipped"
             }
@@ -208,35 +254,17 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 25,
-            "name": "I verify error messages on summary",
+            "line": 73,
+            "name": "I click submit for review button",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 26,
-            "name": "I verify error messages on provenance",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 27,
-            "name": "I verify error messages on accessibility",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 28,
-            "name": "I verify error message on Observations",
+            "keyword": "Then ",
+            "line": 74,
+            "name": "I should validate all Boundary value checks and character limit on \"Observations\" page",
             "result": {
               "status": "skipped"
             }

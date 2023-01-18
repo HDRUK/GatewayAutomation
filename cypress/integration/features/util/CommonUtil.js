@@ -1,6 +1,17 @@
 const startApplication = ".ui-Button.css-1u4yvgi";
 const requestAccess = '.btn.btn-primary.addButton.pointer.float-right';
-const paperLink = ".purple-bold-16.css-d5w927"
+const paperLink = ".purple-bold-16.css-d5w927";
+const popupWindowText1 = "//h1[normalize-space()='Mandatory fields missing']";
+const popupWindowText2 = "//p[contains(text(),'You cannot submit this dataset for review until yo')]";
+const popupWindowText3 = "//h1[normalize-space()='Mandatory Fields Missing']";
+const popupWindowText4 = "//div[contains(@class,'missingFieldsModal-body')]";
+const clickClosePopupWindowBtn = "//div[@class='missingFieldsModal-header']//*[name()='svg']";
+const manageApplicationBtn = "button[class='ui-Button css-125pl76']";
+const deleteDraftBtn = "div[class='actionBar'] div:nth-child(4) span:nth-child(1)";
+const deleteDraftButton = "//button[normalize-space()='Delete draft']";
+const homwPageLogo = "//div[@class='ui-Box css-1odk2h7']//a//*[name()='svg']";
+const datsets = ":nth-child(1) > .no-underline > .statsBlock > .text-size-large";
+
 
 let statusCode;
 let locator;
@@ -228,6 +239,65 @@ class CommonUtil {
                 })
                 break;
         }
+    }
+
+    popupWindowValidation() {
+        cy.xpath(popupWindowText1)
+            .invoke("text")
+            .then(text => {
+                expect(text).to.eq('Mandatory fields missing')
+            });
+        cy.xpath(popupWindowText2)
+            .invoke("text")
+            .then(text => {
+                expect(text).to.eq('You cannot submit this dataset for review until you have completed all the mandatory questions. If you need to submit this dataset without the mandatory answers, please raise a support ticket at the following link: https://hdruk.atlassian.net/servicedesk/customer/portal/1')
+            });
+    }
+
+    popupWindowMandatoryValidation() {
+        cy.xpath(popupWindowText3)
+            .invoke("text")
+            .then(text => {
+                expect(text).to.eq('Mandatory Fields Missing')
+            });
+        cy.xpath(popupWindowText4)
+            .invoke("text")
+            .then(text => {
+                expect(text).to.eq('You cannot submit this application for review until you have completed all the mandatory questions.')
+            });
+    }
+
+    clickClosePopupWindow() {
+        cy.xpath(clickClosePopupWindowBtn).click({ force: true });
+    }
+
+    deleteDraft() {
+        cy.get(manageApplicationBtn).then(($el) => {
+            $el.get(0).click({ force: true });
+        })
+        cy.wait(3000);
+        cy.get(deleteDraftBtn).then(($el) => {
+            $el.get(0).click({ force: true });
+        })
+        cy.wait(5000);
+        cy.xpath(deleteDraftButton).then(($el) => {
+            $el.get(0).click({ force: true });
+        })
+        //cy.wait(3000);
+        //cy.xpath(homwPageLogo).click();
+
+        //cy.xpath(homwPageLogo).then(($el) => {
+        //  $el.get(0).click({force: true});
+        //  })
+        //cy.wait(3000);
+        //cy.xpath(datsets).then(($el) => {
+        //  $el.get(0).click({force: true});
+        //})
+       // cy.get(datsets)
+           // .then(($el) => {
+             //   const url = $el.prop("href")
+               // cy.visit("https://web.uat.healthdatagateway.org/search?search=&datasetSort=latest&tab=Datasets");
+           // })
     }
 
     postGet(postUrl, getUrl, clientId, clientSecret, postRequest, getRequest) {
