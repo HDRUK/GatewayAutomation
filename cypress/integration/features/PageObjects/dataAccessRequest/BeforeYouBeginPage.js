@@ -27,7 +27,7 @@ class BeforeYouBeginPage {
         cy.get(chkInviteContributors, {timeout: 5000}).check({force: true});
         cy.wait(5000);
         cy.get(chkReadAdvice, {timeout: 5000}).check({force: true});
-        //cy.wait(5000);
+        cy.wait(5000);
         cy.get(chkCommunicateAdvice, {timeout: 5000}).check({force: true});
         commonUtil.click(nextBtn);
         cy.wait(8000);
